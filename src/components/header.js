@@ -4,8 +4,7 @@ import * as headerStyles from "../styles/header.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = () => (
-  <header id={headerStyles.headerContainer}>
-    <div id={headerStyles.headerContent}>
+  <header id={headerStyles.headerContent}>
       <StaticImage
         src="../images/home/MB_logo.png"
         width={169}
@@ -18,17 +17,13 @@ const Header = () => (
 
     <nav id={headerStyles.navigation}>
       <ul>
-        <li><a href="#">RELEASES</a></li>
-        <li><a href="#">VIDEOS</a></li>
-        <li><a href="#">STORE</a></li>
-        <li><a href="#">PHOTOS</a></li>
-        <li><a href="#">SUBSCRIBE</a></li>
+        <li><a href="#releases">RELEASES</a></li>
+        <li><a href="#videos">VIDEOS</a></li>
+        <li><a href="#store">STORE</a></li>
+        <li><a href="#photos">PHOTOS</a></li>
+        <li><a href="#subscribe">SUBSCRIBE</a></li>
       </ul>
     </nav>
-
-
-
-    </div>
   </header>
 )
 
