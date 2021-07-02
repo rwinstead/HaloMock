@@ -1,42 +1,35 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import * as headerStyles from "../styles/header.module.css"
+import { StaticImage } from "gatsby-plugin-image"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => (
+  <header id={headerStyles.headerContainer}>
+    <div id={headerStyles.headerContent}>
+      <StaticImage
+        src="../images/home/MB_logo.png"
+        width={169}
+        quality={95}
+        formats={["AUTO", "WEBP", "AVIF"]}
+        alt="Murda Beatz logo"
+        className={headerStyles.logo}
+        placeholder="tracedSVG"
+      />
+
+    <nav id={headerStyles.navigation}>
+      <ul>
+        <li><a href="#">RELEASES</a></li>
+        <li><a href="#">VIDEOS</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">PHOTOS</a></li>
+        <li><a href="#">SUBSCRIBE</a></li>
+      </ul>
+    </nav>
+
+
+
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+:root {
+    --main-yellow: #F6C82A;
+    font-size: 16px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    /* background-color: black; */
+    overflow-x: hidden;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
