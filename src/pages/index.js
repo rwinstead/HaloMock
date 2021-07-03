@@ -14,12 +14,12 @@ const IndexPage = () => (
     <section id={homeStyles.heroContainer}>
     <div id={homeStyles.heroSocial}>
         <ul>
-          <li><a href="#email"><Email/></a></li>
-          <li><a href="#spotify"><Spotify/></a></li>
-          <li><a href="#itunes"><Itunes/></a></li>
-          <li><a href="#instagram"><Insta/></a></li>
-          <li><a href="#twitter"><Twitter/></a></li>
-          <li><a href="#facebook"><Facebook/></a></li>
+          <li><a href="#email"><Email/> </a></li>
+          <li><a href="#spotify"><Spotify/> </a></li>
+          <li><a href="#itunes"><Itunes/> </a></li>
+          <li><a href="#instagram"><Insta/> </a></li>
+          <li><a href="#twitter"><Twitter/> </a></li>
+          <li><a href="#facebook"><Facebook/> </a></li>
         </ul>
       </div>
 
@@ -39,8 +39,8 @@ const IndexPage = () => (
           </div>
 
           <StaticImage
-            src="../images/home/heroImgFinal.png"
-            width={644.41}
+            src="../images/home/heroImgFinal2.png"
+            width={620}
             quality={100}
             formats={["AUTO", "WEBP", "AVIF"]}
             alt="Hero image of Murda Beatz drum kit quarantine pack"
