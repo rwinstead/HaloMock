@@ -5,12 +5,7 @@ import Seo from "../components/seo"
 import Header from "../components/header"
 import * as homeStyles from "../styles/home.module.css"
 
-import emailIcon from "../images/home/social_icons/ico-mail.svg"
-import spotifyIcon from "../images/home/social_icons/ico-spotify.svg"
-import itunesIcon from "../images/home/social_icons/ico-apple.svg"
-import instaIcon from "../images/home/social_icons/ico-ig.svg"
-import twitterIcon from "../images/home/social_icons/ico-twitter.svg"
-import facebookIcon from "../images/home/social_icons/ico-fb.svg"
+import {Email, Spotify, Itunes, Insta, Twitter, Facebook} from "../images/home/social_icons/social-inline-svgs"
 
 const IndexPage = () => (
   <main>
@@ -19,12 +14,12 @@ const IndexPage = () => (
     <section id={homeStyles.heroContainer}>
     <div id={homeStyles.heroSocial}>
         <ul>
-          <li><a href="#email"><img src={emailIcon} alt="Email link"/></a></li>
-          <li><a href="#spotify"><img src={spotifyIcon} alt="Spotify link"/></a></li>
-          <li><a href="#itunes"><img src={itunesIcon} alt="Itunes link"/></a></li>
-          <li><a href="#instagram"><img src={instaIcon} alt="Instagram link"/></a></li>
-          <li><a href="#twitter"><img src={twitterIcon} alt="Twitter link"/></a></li>
-          <li><a href="#facebook"><img src={facebookIcon} alt="Facebook link"/></a></li>
+          <li><a href="#email"><Email/></a></li>
+          <li><a href="#spotify"><Spotify/></a></li>
+          <li><a href="#itunes"><Itunes/></a></li>
+          <li><a href="#instagram"><Insta/></a></li>
+          <li><a href="#twitter"><Twitter/></a></li>
+          <li><a href="#facebook"><Facebook/></a></li>
         </ul>
       </div>
 
