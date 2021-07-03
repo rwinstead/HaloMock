@@ -7,6 +7,12 @@ import * as homeStyles from "../styles/home.module.css"
 
 import {Email, Spotify, Itunes, Insta, Twitter, Facebook} from "../images/home/social_icons/social-inline-svgs"
 
+import featuredImg from "../images/home/releases/featured.png"
+import releases1 from "../images/home/releases/releases1.png"
+import releases2 from "../images/home/releases/releases2.png"
+import releases3 from "../images/home/releases/releases3.png"
+import releases4 from "../images/home/releases/releases4.png"
+
 const IndexPage = () => (
   <main>
     <Seo title="Home"/>
@@ -50,9 +56,39 @@ const IndexPage = () => (
 
       </div>
     </section>
-    <div>
-      ih
-    </div>
+
+    <section id={homeStyles.releases}>
+      <div id={homeStyles.lightOverlay}/>
+      <div class={homeStyles.sectionContent}>
+        <div class={homeStyles.sectionHeaderWhite}>
+          RELEASES
+        </div>
+          <div class={homeStyles.releasesPhotoGrid}>
+            <div 
+              class={`${homeStyles.releasesCard} ${homeStyles.releasesFeaturedCard}`}
+              style={{backgroundImage: `url(${featuredImg})`}}
+            />
+            <div 
+              class={homeStyles.releasesCard}
+              style={{backgroundImage: `url(${releases1})`}}
+            />
+            <div 
+              class={homeStyles.releasesCard}
+              style={{backgroundImage: `url(${releases2})`}}
+            />
+            <div 
+              class={homeStyles.releasesCard}
+              style={{backgroundImage: `url(${releases3})`}}
+            />
+            <div 
+              class={homeStyles.releasesCard}
+              style={{backgroundImage: `url(${releases4})`}}
+            />
+
+        </div>
+      </div>
+    </section>
+
   </main>
 )
 
