@@ -121,6 +121,9 @@
         right: 0;
         position: absolute;
         z-index: 99999;
+        overflow: visible;
+        border-radius: 0;
+        width: 36px;
     }
 
     #closeX {

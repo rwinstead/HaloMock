@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import * as headerStyles from "../styles/header.module.css"
 import { StaticImage } from "gatsby-plugin-image"
-import hamburger from "../images/header/hamburger.svg"
+import hamburger from "../images/header/hamburger.png"
 import closeX from "../images/header/closeX.svg"
 
 export default class Header extends React.Component {
