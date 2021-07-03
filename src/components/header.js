@@ -39,11 +39,11 @@ export default class Header extends React.Component {
           <div id={headerStyles.navMobileFullscreen}>
             <nav id={headerStyles.navMobileItems}>
               <ul>
-                <li><a onClick={this.showMenu} href="#releases">RELEASES</a></li>
-                <li><a onClick={this.showMenu} href="#videos">VIDEOS</a></li>
-                <li><a onClick={this.showMenu} href="#store">STORE</a></li>
-                <li><a onClick={this.showMenu} href="#photos">PHOTOS</a></li>
-                <li><a onClick={this.showMenu} href="#subscribe">SUBSCRIBE</a></li>
+                <li><a href="#releases">RELEASES</a></li>
+                <li><a href="#videos">VIDEOS</a></li>
+                <li><a href="#store">STORE</a></li>
+                <li><a href="#photos">PHOTOS</a></li>
+                <li><a href="#subscribe">SUBSCRIBE</a></li>
               </ul>
             </nav>
           </div>
@@ -53,7 +53,7 @@ export default class Header extends React.Component {
     else {
      navButton = <input type="image" alt="Open menu" id={headerStyles.hamburger} src={hamburger} onClick={this.showMenu}/>;
      navMenu = 
-     <div id={headerStyles.navMobileFullscreenContainer}>
+     <div id={headerStyles.navMobileFullscreenContainerInvis}>
        <div id={headerStyles.navMobileFullscreenShrink}>
          
        </div>

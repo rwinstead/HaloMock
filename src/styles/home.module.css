@@ -195,15 +195,57 @@
 
 @media only screen and (max-width: 710px) {
 
-    #heroBkgContainer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;    
-    }
 
     .heroBkgImg {
         max-width: 400px;
-        margin: -2rem 0rem 0rem;
+    }
+
+    #heroBkgTextBold {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    #heroListenNowBtn {
+        font-size: 16px;
+        width: 150px;
+        padding: 8px 10px;
+        margin-top: 1.5rem;
+    }
+
+    #heroBkgContainer {
+        justify-content: center;
+    }
+
+    #heroBkgTextContainer {
+        margin-left: 50px;
+        min-width: 20rem;
+    }
+
+    #heroSocial {
+        display: none;
+    }
+
+
+    #heroContainer {
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    #heroBkgContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        max-width: 100vw;
+        overflow-x: hidden;   
+    }
+
+    .heroBkgImg {
+        max-width: 320px;
+        margin: -.2rem 0rem 0rem -4.5rem;
+        overflow: hidden;
     }
 
     #heroBkgTextBold {
@@ -219,9 +261,10 @@
     }
 
     #heroBkgTextContainer {
-        margin-left: 99px;
+        margin-left: 0;
         align-self: unset;
         order: 2;
+        text-align: center;
     }
 
     #heroSocial {
@@ -232,5 +275,4 @@
     #heroContainer {
         height: auto;
     }
-
 }
