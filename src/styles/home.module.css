@@ -48,7 +48,7 @@
     align-self: flex-end;
     margin-left: 119px;
     margin-bottom: 57px;
-    z-index: 9999;
+    z-index: 9;
 }
 
 #heroBkgTextBold {
@@ -80,7 +80,7 @@
     position: absolute;
     right: 0;
     top: 271px;
-    z-index: 9999;
+    z-index: 10;
 }
 
 #heroSocial ul {
@@ -103,6 +103,8 @@
     margin-bottom: 0;
 }
 
+/* -------------- MEDIA QUERIES -------------- */
+
 @media only screen and (max-width: 1250px) {
 
     .heroBkgImg {
@@ -115,6 +117,120 @@
 
     #heroContainer {
         height: 710px;
+    }
+
+    #heroSocial {
+        top: 221.5px;
+    }
+
+}
+
+@media only screen and (max-width: 1075px) {
+
+    .heroBkgImg {
+        max-width: 500px;
+    }
+
+    #heroBkgTextBold {
+        font-size: 42px;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    .heroBkgImg {
+        max-width: 420px;
+    }
+
+    #heroBkgTextBold {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    #heroContainer {
+        height: 620px;
+    }
+
+    #heroSocial {
+        top: 176.5px;
+    }
+
+    .sedgwick {
+        font-size: 15px;
+    }
+
+    #heroListenNowBtn {
+        font-size: 18px;
+        width: 190px;
+        padding: 8px 22px;
+        margin-top: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .heroBkgImg {
+        max-width: 400px;
+    }
+
+    #heroBkgTextBold {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    #heroListenNowBtn {
+        font-size: 16px;
+        width: 150px;
+        padding: 8px 10px;
+        margin-top: 1.5rem;
+    }
+
+    #heroBkgTextContainer {
+        margin-left: 99px;
+    }
+
+}
+
+@media only screen and (max-width: 710px) {
+
+    #heroBkgContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    .heroBkgImg {
+        max-width: 400px;
+        margin: -2rem 0rem 0rem;
+    }
+
+    #heroBkgTextBold {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+    #heroListenNowBtn {
+        font-size: 16px;
+        width: 150px;
+        padding: 8px 10px;
+        margin-top: 1.5rem;
+    }
+
+    #heroBkgTextContainer {
+        margin-left: 99px;
+        align-self: unset;
+        order: 2;
+    }
+
+    #heroSocial {
+        display: none;
+    }
+
+
+    #heroContainer {
+        height: auto;
     }
 
 }
