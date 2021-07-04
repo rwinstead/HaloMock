@@ -9,7 +9,7 @@
 }
 
 .logo {
-    position: absolute;
+    position: absolute !important;
     margin-left: 50px;
     margin-top: 24px;
 }
@@ -214,6 +214,10 @@
         font-weight: 800;
         position: relative;
         z-index: 999999999;
+    }
+
+    .logo {
+        position: relative !important;
     }
 
   }

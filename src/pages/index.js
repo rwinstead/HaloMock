@@ -41,7 +41,7 @@ const IndexPage = () => (
               QUARANTINE KIT<br/>
               SAMPLE PACK
             </div>
-            <button id={homeStyles.heroListenNowBtn} class={`${homeStyles.sen} ${homeStyles.bold}`} type="button">LISTEN NOW</button>
+            <button class={`${homeStyles.heroListenNowBtn} ${homeStyles.sen} ${homeStyles.bold}`} type="button">LISTEN NOW</button>
           </div>
 
           <StaticImage
@@ -84,8 +84,13 @@ const IndexPage = () => (
               class={homeStyles.releasesCard}
               style={{backgroundImage: `url(${releases4})`}}
             />
-
         </div>
+
+        <div class={`${homeStyles.yellowButton} ${homeStyles.sectionBtn} ${homeStyles.sen} ${homeStyles.bold}`}>
+          VIEW ALL RELEASES
+        </div>
+
+
       </div>
     </section>
 
