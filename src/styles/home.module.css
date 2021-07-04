@@ -460,6 +460,128 @@
     transition: all .3s ease;
  }
 
+ #subscribe {
+    width: 100%;
+    height: auto;
+    background-repeat: repeat;
+    background-image: url(../images/home/maskTile.png);
+    background-size: 350px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ #subscribeHeader {
+     margin:0;
+ }
+
+ #subscribeContainer {
+     max-width: 715px;
+     height: auto;
+     margin: 0 auto;
+ }
+
+ #formContainer {
+     padding-top: 11rem;
+     height:auto;
+     width: auto;
+    }
+
+#formRow1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textInput {
+    background: none;
+    border: none;
+    font-family: sen;
+    color: var(--main-yellow);
+    font-size: 20px;
+    border-bottom: 2px solid var(--main-yellow);
+    width: 47%;
+}
+
+.textInput:focus {
+    outline: none;
+}
+
+.textInput:focus::placeholder {
+    opacity: 0;
+}
+
+.textInput::placeholder {
+    opacity: 1;
+}
+
+#formRow2 {
+    display: flex;
+    margin-top: .85rem;
+}
+
+#emailListTitle {
+    color: white;
+    letter-spacing: normal;
+    margin-top: 2.5rem;
+}
+
+.formCheckbox {
+    -webkit-appearance: none;
+	border: 2px solid #FADF46;
+	padding: 7px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+    top: 4px;
+}
+
+.formCheckbox:checked::after{
+	content: '\2713';
+	font-size: 22px;
+    font-family: sen;
+    font-weight: 800;
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	color: #FADF46;
+}
+
+.checkboxLabel {
+    font-family: sen;
+    font-weight: 800;
+    color: #FADF46;
+    margin-left: .75rem; 
+}
+
+.checkItem {
+    margin-left: 2rem;
+}
+
+.checkItem:first-child {
+    margin-left: 0;
+}
+
+#consent {
+    font-family: sen;
+    font-weight: 800;
+    color:white;
+    margin-top: 3.5rem;
+    font-size: 14px;
+}
+
+#consent a {
+    text-decoration: none;
+    color: #FADF46;
+}
+
+#formSubmitBtn {
+    left: unset;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
 /* -------------- MEDIA QUERIES -------------- */
 
 @media only screen and (max-width: 1250px) {
@@ -694,6 +816,12 @@
          margin-top: 1rem;
      }
 
+     #subscribeContainer {
+        max-width: 675px;
+        height: auto;
+        margin: 0 auto;
+    }
+
 }
 
 @media only screen and (max-width: 710px) {
@@ -785,6 +913,29 @@
      #videoArrows input:first-child {
         margin-right: 2rem;
     }
+
+    #formRow1 {
+        flex-direction: column;
+    }
+
+    #formRow2 {
+        flex-direction: column;
+    }
+
+    .checkItem {
+        margin: .35rem 0rem;
+    }
+
+    #subscribeContainer {
+        width: auto;
+        height: auto;
+        margin: 0 2rem;
+    }
+
+    .textInput {
+        width: 75%;
+    }
+
 
 }
 

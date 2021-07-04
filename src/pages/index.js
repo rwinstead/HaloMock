@@ -18,6 +18,10 @@ import video2 from "../images/home/videos/video2.png"
 import arrowL from "../images/home/videos/arrowL.svg"
 import arrowR from "../images/home/videos/arrowR.svg"
 
+import {Countries} from "../components/countries"
+
+import Footer from "../components/footer"
+
 export default class Index extends React.Component {
 
   constructor(props) {
@@ -454,6 +458,47 @@ render () {
       </div>
     </section>
 
+    <section id={homeStyles.subscribe}>
+      <div id={homeStyles.subscribeContainer}>
+        <div id={homeStyles.subscribeHeader} class={`${homeStyles.sectionHeader} ${homeStyles.strokedWhite}`}>
+              SUBSCRIBE
+        </div>
+
+        <div id={homeStyles.formContainer}>
+            <form action="#">
+              <div id={homeStyles.formRow1}>
+                <input class={homeStyles.textInput} type="text" id="email" name="email" placeholder="EMAIL ADDRESS"></input>
+                <Countries/>
+            </div>
+            <div class={homeStyles.sedgwick} id={homeStyles.emailListTitle}>
+              SUBSCRIBE TO EMAILS FROM:
+            </div>
+            <div id={homeStyles.formRow2}>
+              <div class={homeStyles.checkItem}>
+                <input class={homeStyles.formCheckbox} type="checkbox" id="Murda_Beatz" name="Murda_Beatz"/>
+                <label class={homeStyles.checkboxLabel} for="Murda Beatz">MURDA BEATZ</label>
+              </div>
+              <div class={homeStyles.checkItem}>
+                <input class={homeStyles.formCheckbox} type="checkbox" id="Interscope_Records" name="Interscope_records"/>
+                <label class={homeStyles.checkboxLabel} for="Interscope records">INTERSCOPE RECORDS</label>
+              </div>
+              <div class={homeStyles.checkItem}>
+                <input class={homeStyles.formCheckbox} type="checkbox" id="Universal_Music_Group" name="Universal_Music_Group"/>
+                <label class={homeStyles.checkboxLabel} for="Universal Music Group">UNIVERSAL MUSIC GROUP</label>
+              </div>
+            </div>
+            <div id={homeStyles.consent}>
+              BY SUBMITTING THIS FORM, YOU AGREE TO THE <a href="#PRIVACYPOLICY">UNIVERSAL MUSIC GROUP PRIVACY POLICY.</a>
+            </div>
+            <button id={homeStyles.formSubmitBtn} class={`${homeStyles.yellowButton} ${homeStyles.sectionBtn} ${homeStyles.sen} ${homeStyles.bold}`}>
+                SUBMIT
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+    <Footer/>
   </main>
     );
   }
