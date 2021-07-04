@@ -89,8 +89,108 @@ const IndexPage = () => (
         <div class={`${homeStyles.yellowButton} ${homeStyles.sectionBtn} ${homeStyles.sen} ${homeStyles.bold}`}>
           VIEW ALL RELEASES
         </div>
+      </div>
+    </section>
 
-
+    <section id={homeStyles.tour}>
+      <div class={homeStyles.sectionContent}>
+        <div class={homeStyles.sectionHeaderWhite}>
+            TOUR
+        </div>
+        <div id={homeStyles.tourGrid}>
+          <div class={homeStyles.tourCard}>
+            <div class={homeStyles.tourItem}>
+              <div class={homeStyles.tourItemLeft}>
+                <div class={homeStyles.sedgwick}>JUN 6</div>
+                <div class={homeStyles.tourLocation1}>JEWEL NIGHTCLUB</div>
+                <div class={homeStyles.tourLocation2}>LAS VEGAS, NV</div>
+              </div>
+              <div class={homeStyles.tourItemRight}>
+                <span class={homeStyles.tourLinksSpace}><a href="#TICKETS">TICKETS</a></span>
+                <span class={homeStyles.tourLinksSpace}><a href="#VIP">VIP</a></span>
+                <a href="#RSVP">RSVP</a>
+              </div>
+            </div>
+            <div class={homeStyles.tourDivider}/>
+          </div>
+          <div class={homeStyles.tourCard}>
+            <div class={homeStyles.tourItem}>
+              <div class={homeStyles.tourItemLeft}>
+                <div class={homeStyles.sedgwick}>JUN 6</div>
+                <div class={homeStyles.tourLocation1}>JEWEL NIGHTCLUB</div>
+                <div class={homeStyles.tourLocation2}>LAS VEGAS, NV</div>
+              </div>
+              <div class={homeStyles.tourItemRight}>
+                <span class={homeStyles.tourLinksSpace}><a href="#TICKETS">TICKETS</a></span>
+                <span class={homeStyles.tourLinksSpace}><a href="#VIP">VIP</a></span>
+                <a href="#RSVP">RSVP</a>
+              </div>
+            </div>
+            <div class={homeStyles.tourDivider}/>
+          </div>
+          <div class={homeStyles.tourCard}>
+            <div class={homeStyles.tourItem}>
+              <div class={homeStyles.tourItemLeft}>
+                <div class={homeStyles.sedgwick}>JUN 6</div>
+                <div class={homeStyles.tourLocation1}>JEWEL NIGHTCLUB</div>
+                <div class={homeStyles.tourLocation2}>LAS VEGAS, NV</div>
+              </div>
+              <div class={homeStyles.tourItemRight}>
+                <span class={homeStyles.tourLinksSpace}><a href="#TICKETS">TICKETS</a></span>
+                <span class={homeStyles.tourLinksSpace}><a href="#VIP">VIP</a></span>
+                <a href="#RSVP">RSVP</a>
+              </div>
+            </div>
+            <div class={homeStyles.tourDivider}/>
+          </div>
+          <div class={homeStyles.tourCard}>
+            <div class={homeStyles.tourItem}>
+              <div class={homeStyles.tourItemLeft}>
+                <div class={homeStyles.sedgwick}>JUN 6</div>
+                <div class={homeStyles.tourLocation1}>JEWEL NIGHTCLUB</div>
+                <div class={homeStyles.tourLocation2}>LAS VEGAS, NV</div>
+              </div>
+              <div class={homeStyles.tourItemRight}>
+                <span class={homeStyles.tourLinksSpace}><a href="#TICKETS">TICKETS</a></span>
+                <span class={homeStyles.tourLinksSpace}><a href="#VIP">VIP</a></span>
+                <a href="#RSVP">RSVP</a>
+              </div>
+            </div>
+            <div class={homeStyles.tourDivider}/>
+          </div>
+          <div class={homeStyles.tourCard}>
+            <div class={homeStyles.tourItem}>
+              <div class={homeStyles.tourItemLeft}>
+                <div class={homeStyles.sedgwick}>JUN 6</div>
+                <div class={homeStyles.tourLocation1}>JEWEL NIGHTCLUB</div>
+                <div class={homeStyles.tourLocation2}>LAS VEGAS, NV</div>
+              </div>
+              <div class={homeStyles.tourItemRight}>
+                <span class={homeStyles.tourLinksSpace}><a href="#TICKETS">TICKETS</a></span>
+                <span class={homeStyles.tourLinksSpace}><a href="#VIP">VIP</a></span>
+                <a href="#RSVP">RSVP</a>
+              </div>
+            </div>
+            <div class={`${homeStyles.tourDivider} ${homeStyles.mobileOnly}`}/>
+          </div>
+          <div class={homeStyles.tourCard}>
+            <div class={homeStyles.tourItem}>
+              <div class={homeStyles.tourItemLeft}>
+                <div class={homeStyles.sedgwick}>JUN 6</div>
+                <div class={homeStyles.tourLocation1}>JEWEL NIGHTCLUB</div>
+                <div class={homeStyles.tourLocation2}>LAS VEGAS, NV</div>
+              </div>
+              <div class={homeStyles.tourItemRight}>
+                <span class={homeStyles.tourLinksSpace}><a href="#TICKETS">TICKETS</a></span>
+                <span class={homeStyles.tourLinksSpace}><a href="#VIP">VIP</a></span>
+                <a href="#RSVP">RSVP</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class={`${homeStyles.yellowButton} ${homeStyles.sectionBtn} ${homeStyles.sen} ${homeStyles.bold}`}>
+          VIEW ALL DATES
+        </div>
       </div>
     </section>
 
