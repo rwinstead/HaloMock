@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import * as headerStyles from "../styles/header.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 import hamburger from "../images/header/hamburger.png"
@@ -70,6 +69,7 @@ export default class Header extends React.Component {
           alt="Murda Beatz logo"
           className={headerStyles.logo}
           placeholder="tracedSVG"
+          loading={"eager"}
         />
 
         <nav id={headerStyles.navigation}>
