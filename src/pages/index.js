@@ -22,6 +22,8 @@ import {Countries} from "../components/countries"
 
 import Footer from "../components/footer"
 
+import logo from "../images/MB_favicon.png"
+
 export default class Index extends React.Component {
 
   constructor(props) {
@@ -114,7 +116,11 @@ render () {
 
   return (
   <main>
-    <Seo title="Home"/>
+    <Seo 
+      title="Home"
+      description="The official MURDA Beatz website"
+      image={logo}
+    />
     <Header/>
     <section id={homeStyles.heroContainer}>
     <div id={homeStyles.heroSocial}>

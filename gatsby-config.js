@@ -3,7 +3,8 @@ module.exports = {
     title: `MURDA Beatz`,
     description: `The official MURDA Beatz homepage`,
     author: `Ryan Winstead`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `http://murdabeatz.surge.sh`,
+    image: "/MB_favicon.png"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
