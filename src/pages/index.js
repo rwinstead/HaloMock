@@ -360,6 +360,100 @@ render () {
       </div>
     </section>
 
+    <section id={homeStyles.photos}>
+    <div class={homeStyles.sectionContent}>
+      <div class={`${homeStyles.sectionHeader} ${homeStyles.strokedWhite}`}>
+            PHOTOS
+      </div>
+
+      <div id={homeStyles.photosContainer}>
+        <StaticImage
+          src="../images/home/photos/photo1.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo2.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo3.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo4.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo5.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+                <StaticImage
+          src="../images/home/photos/photo6.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo7.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo8.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo9.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+        <StaticImage
+          src="../images/home/photos/photo10.png"
+          width={232}
+          quality={100}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Photo gallery 1"
+          className={homeStyles.photosImg}
+        />
+      </div>
+      <div class={`${homeStyles.yellowButton} ${homeStyles.sectionBtn} ${homeStyles.sen} ${homeStyles.bold}`}>
+          VIEW ALL PHOTOS
+        </div>
+      </div>
+    </section>
+
   </main>
     );
   }
