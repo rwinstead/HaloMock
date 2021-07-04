@@ -156,7 +156,7 @@ render () {
     <section id={homeStyles.releases}>
       <div id={homeStyles.lightOverlay}/>
       <div class={homeStyles.sectionContent}>
-        <div class={homeStyles.sectionHeaderWhite}>
+        <div class={`${homeStyles.sectionHeader} ${homeStyles.strokedWhite}`}>
           RELEASES
         </div>
           <div class={homeStyles.releasesPhotoGrid}>
@@ -190,7 +190,7 @@ render () {
 
     <section id={homeStyles.tour}>
       <div class={homeStyles.sectionContent}>
-        <div class={homeStyles.sectionHeaderWhite}>
+      <div class={`${homeStyles.sectionHeader} ${homeStyles.strokedWhite}`}>
             TOUR
         </div>
         <div id={homeStyles.tourGrid}>
@@ -292,7 +292,7 @@ render () {
 
     <section id={homeStyles.videos}>
     <div class={homeStyles.sectionContent}>
-        <div class={homeStyles.sectionHeaderWhite}>
+      <div class={`${homeStyles.sectionHeader} ${homeStyles.strokedWhite}`}>
             VIDEOS
         </div>
         <div id={homeStyles.videoOutter}>
@@ -317,6 +317,46 @@ render () {
         <div id={homeStyles.videoBtn} class={`${homeStyles.yellowButton} ${homeStyles.sectionBtn} ${homeStyles.sen} ${homeStyles.bold}`}>
                 VIEW ALL VIDEOS
         </div>
+      </div>
+    </section>
+
+    <section id={homeStyles.store}>
+    <div class={homeStyles.sectionContent}>
+      <div class={`${homeStyles.sectionHeader} ${homeStyles.strokedBlack}`}>
+            STORE
+        </div>
+
+        <div id={homeStyles.storeContainer}>
+          <StaticImage
+              src="../images/home/store/storea.png"
+              width={396}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Banana Split long-sleeved t-shirt merchandise"
+              className={homeStyles.storeImg}
+            />
+            <StaticImage
+              src="../images/home/store/storeb.png"
+              width={396}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Banana Split long-sleeved t-shirt merchandise"
+              className={homeStyles.storeImg}
+            />
+            <StaticImage
+              src="../images/home/store/storec.png"
+              width={396}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Banana Split long-sleeved t-shirt merchandise"
+              className={homeStyles.storeImg}
+            />
+        </div>
+
+        <div id={homeStyles.storeBtn} class={`${homeStyles.yellowButton} ${homeStyles.sectionBtn} ${homeStyles.sen} ${homeStyles.bold}`}>
+          SHOP ALL
+        </div>
+
       </div>
     </section>
 
